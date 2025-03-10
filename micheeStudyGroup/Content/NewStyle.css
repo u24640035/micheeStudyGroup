@@ -1,0 +1,85 @@
+﻿/* Biography Section */
+.biography {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+}
+
+    .biography img {
+        width: 150px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        margin-right: 20px;
+        object-fit: cover; /* Ensures the image fits nicely */
+    }
+
+/* Hobbies Section */
+.hobbies {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+}
+
+    .hobbies img {
+        width: 150px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        margin-left: 20px;
+        object-fit: cover; /* Ensures the image fits nicely */
+    }
+
+/* Modules Section */
+.modules {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+}
+
+    .modules table {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    .modules th, .modules td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .modules th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .modules tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .modules tr:hover {
+        background-color: #f1f1f1;
+    }
+/* Image flipping on hover */
+.biography img:hover,
+.hobbies img:hover {
+    transform: scaleX(-1); /* Flips the image horizontally */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure the image container maintains its size */
+.biography img,
+.hobbies img {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fits nicely */
+    transition: transform 0.3s ease; /* Smooth transition */
+}

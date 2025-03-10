@@ -19,5 +19,8 @@ namespace micheeStudyGroup.Models
 
         [Display(Name = "Email Address")]
         public string Email { get; set; }
+
+       
+        public string myLink { get; set; }
     }
 }
