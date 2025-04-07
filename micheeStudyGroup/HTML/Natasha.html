@@ -2,84 +2,97 @@
 <html>
 <head>
     <title>Student 02 - Natasha Maredi</title>
-    <link href="../Content/NewStyle.css" rel="stylesheet" />
-    <!-- Add Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
 <body>
-    <!-- Updated Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Study Group</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="main.html">MAIN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="list.html">LIST</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            People
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Michee.html">Michee</a>
-                            <a class="dropdown-item" href="Natasha.html">Natasha</a>
-                            <a class="dropdown-item" href="Matthew.html">Matthew</a>
-                            <a class="dropdown-item" href="Lysette.html">Lysette</a>
-                            <a class="dropdown-item" href="Keegan.html">Keegan</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:history.back()">BACK</a>
-                    </li>
-                </ul>
+
+    <div class="container mt-4">
+        <!-- PAGE HEADER -->
+        <h1 class="border-bottom pb-2 mb-4">Student 02 - Natasha Maredi</h1>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item px-2"><a class="nav-link" href="main.html">MAIN</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="list.html">LIST</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="Michee.html">Michee</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="Natasha.html">Natasha</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="Matthew.html">Matthew</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="Lysette.html">Lysette</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="Keegan.html">Keegan</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="javascript:history.back()">BACK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- BIOGRAPHY CARD -->
+        <div class="card card-panel mb-4">
+            <div class="card-header">
+                Background and biography
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="/HTML/Images/Natasha.jpg" class="img-thumbnail" alt="Natasha">
+                    </div>
+                    <div class="col-md-9">
+                        <p>Natasha was born in Pretoria and studies BA Humanities. She chose this degree because it aligns with her passion for understanding human behavior and culture.</p>
+                        <p>Her academic journey focuses on psychology and literature, combining her love for storytelling with scientific inquiry.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <h1>Student 02 - Natasha Maredi</h1>
+        <!-- HOBBIES CARD -->
+        <div class="card card-panel mb-4">
+            <div class="card-header">
+                Hobbies
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>Natasha is an avid reader who particularly enjoys fantasy novels. She also spends time playing The Sims, where she creates elaborate storylines for her characters.</p>
+                        <p>Her favorite book series is "The Stormlight Archive" by Brandon Sanderson, which inspires many of her Sim character creations.</p>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <img src="/HTML/Images/Natasha.jpg" class="hobby-img img-thumbnail" alt="Hobby">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Biography Section -->
-    <div class="biography">
-        <img src="/HTML/Images/Natasha.jpg" alt="Natasha">
-        <div>
-            <h2>Biography and Background</h2>
-            <p>Natasha was born in Pretoria and studies BA Humanities. She studies it because it is what she enjoys.</p>
+        <!-- MODULES CARD -->
+        <div class="card card-panel">
+            <div class="card-header">
+                Modules
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Semester 1</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">SLK 110</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Semester 2</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">SLK 210</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Hobbies Section -->
-    <div class="hobbies">
-        <div>
-            <h2>Hobbies</h2>
-            <p>Natasha really likes reading and The Sims. Enjoy another picture of the superhero though.</p>
-        </div>
-        <img src="/HTML/Images/Natasha.jpg" alt="Hobby">
-    </div>
-
-    <!-- Modules Section -->
-    <div class="modules">
-        <h2>Modules</h2>
-        <table>
-            <tr>
-                <th>Semester 1</th>
-                <th>Semester 2</th>
-            </tr>
-            <tr>
-                <td>SLK 110</td>
-                <td>SLK 210</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Add Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

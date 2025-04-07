@@ -1,0 +1,27 @@
+﻿/* Content/list-style.css */
+.red-text {
+    color: #dc3545 !important; /* Bootstrap's danger color */
+    font-weight: bold;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.table {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-dark {
+    background-color: #212529;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

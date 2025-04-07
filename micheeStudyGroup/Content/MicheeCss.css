@@ -1,0 +1,34 @@
+﻿/* Content/three-column.css */
+.three-col-section {
+    margin-top: 30px;
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+}
+
+.bio-col {
+    border-right: 1px solid #dee2e6;
+}
+
+.hobby-col {
+    border-right: 1px solid #dee2e6;
+}
+
+.profile-img {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.hobby-img {
+    max-width: 150px;
+    float: right;
+    margin-left: 15px;
+}
+
+.module-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+    .module-list li {
+        margin-bottom: 8px;
+    }

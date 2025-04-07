@@ -2,84 +2,78 @@
 <html>
 <head>
     <title>Student 01 - Michee Munganga</title>
-    <link href="../Content/NewStyle.css" rel="stylesheet" />
-    <!-- Add Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/MicheeCss.css" rel="stylesheet" />
+
 </head>
 <body>
-    <!-- Updated Navbar -->
+    <!-- NAVBAR (same as before) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Study Group</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="main.html">MAIN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="list.html">LIST</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            People
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Michee.html">Michee</a>
-                            <a class="dropdown-item" href="Natasha.html">Natasha</a>
-                            <a class="dropdown-item" href="Matthew.html">Matthew</a>
-                            <a class="dropdown-item" href="Lysette.html">Lysette</a>
-                            <a class="dropdown-item" href="Keegan.html">Keegan</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:history.back()">BACK</a>
-                    </li>
+        <div class="container-fluid">
+            <div class="d-flex">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item px-2"><a class="nav-link" href="main.html">MAIN</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="list.html">LIST</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="Michee.html">Michee</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="Natasha.html">Natasha</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="Matthew.html">Matthew</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="Lysette.html">Lysette</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="Keegan.html">Keegan</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="javascript:history.back()">BACK</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <h1>Student 01 - Michee Munganga</h1>
+    <div class="container mt-4">
+        <!-- PAGE HEADER -->
+        <h1>Student 01 - Michee Munganga</h1>
 
-    <!-- Biography Section -->
-    <div class="biography">
-        <img src="/HTML/Images/Michee.jpg" alt="Michee">
-        <div>
-            <h2>Biography and Background</h2>
-            <p>Michee was born in Pretoria and studies BIT Information Systems. He studies it because it can make him money.</p>
+        <!-- THREE-COLUMN LAYOUT -->
+        <div class="row three-col-section">
+            <!-- BIOGRAPHY COLUMN (Left) -->
+            <div class="col-md-5 bio-col pe-4">
+                <h3>Biography and Background</h3>
+                <img src="/HTML/Images/Michee.jpg" class="profile-img img-thumbnail" alt="Michee">
+                <p>Michee was born in Pretoria and studies BIT Information Systems. He chose this degree to develop technical solutions for African business challenges.</p>
+                <p>His research focuses on mobile payment systems and their impact on informal economies.</p>
+            </div>
+
+            <!-- HOBBIES COLUMN (Middle) -->
+            <div class="col-md-3 hobby-col px-4">
+                <h3>Hobbies</h3>
+                <img src="/HTML/Images/Michee.jpg" class="hobby-img img-thumbnail" alt="Football">
+                <p>Michee captains his local football team and competes in weekend leagues. He also streams coding tutorials on Twitch.</p>
+                <p>His FIFA tournament record is 32-5 this season.</p>
+            </div>
+
+            <!-- MODULES COLUMN (Right) -->
+            <div class="col-md-4 ps-4">
+                <h3>Modules</h3>
+                <div class="row">
+                    <div class="col">
+                        <h5>Semester 1</h5>
+                        <ul class="module-list">
+                            <li>• INF 271</li>
+                            <li>• WTW 114</li>
+                            <li>• COS 132</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Semester 2</h5>
+                        <ul class="module-list">
+                            <li>• INF 272</li>
+                            <li>• WTW 124</li>
+                            <li>• COS 212</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Hobbies Section -->
-    <div class="hobbies">
-        <div>
-            <h2>Hobbies</h2>
-            <p>Michee really likes football and video games. Enjoy another picture of the superhero though.</p>
-        </div>
-        <img src="/HTML/Images/Michee.jpg" alt="Hobby">
-    </div>
-
-    <!-- Modules Section -->
-    <div class="modules">
-        <h2>Modules</h2>
-        <table>
-            <tr>
-                <th>Semester 1</th>
-                <th>Semester 2</th>
-            </tr>
-            <tr>
-                <td>INF 271</td>
-                <td>INF 272</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Add Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

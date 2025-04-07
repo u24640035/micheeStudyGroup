@@ -145,6 +145,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\ListScript.js" />
+    <Content Include="Content\ListStyle.css" />
+    <Content Include="Content\MicheeCss.css" />
     <Content Include="Content\NewStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

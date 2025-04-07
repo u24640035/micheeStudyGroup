@@ -83,3 +83,26 @@
     object-fit: cover; /* Ensures the image fits nicely */
     transition: transform 0.3s ease; /* Smooth transition */
 }
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+<style >
+/* Custom styles to match the example */
+.section-header {
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border-left: 4px solid #0d6efd;
+}
+
+.module-column {
+    padding-left: 25px;
+}
+
+</style >
