@@ -5,10 +5,44 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Content/MicheeCss.css" rel="stylesheet" />
+    <style>
+        .tab-content {
+            display: none;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+            .tab-content.active {
+                display: block;
+                opacity: 1;
+                height: auto;
+            }
+
+        .tab-button {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid #0d6efd; /* Added border for better visibility */
+        }
+
+            .tab-button.active {
+                font-weight: bold;
+                background-color: #0d6efd;
+                color: white;
+                border-color: #0d6efd; /* Ensure border matches background */
+                box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25); /* Add glow effect */
+            }
+
+            .tab-button:not(.active) {
+                background-color: white;
+                color: #0d6efd;
+            }
+    </style>
 
 </head>
 <body>
-    <!-- NAVBAR (same as before) -->
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="d-flex">
@@ -30,43 +64,59 @@
         <!-- PAGE HEADER -->
         <h1>Student 01 - Michee Munganga</h1>
 
-        <!-- THREE-COLUMN LAYOUT -->
-        <div class="row three-col-section">
-            <!-- BIOGRAPHY COLUMN (Left) -->
-            <div class="col-md-5 bio-col pe-4">
-                <h3>Biography and Background</h3>
-                <img src="/HTML/Images/Michee.jpg" class="profile-img img-thumbnail" alt="Michee">
-                <p>Michee was born in Pretoria and studies BIT Information Systems. He chose this degree to develop technical solutions for African business challenges.</p>
-                <p>His research focuses on mobile payment systems and their impact on informal economies.</p>
-            </div>
+        <!-- TAB BUTTONS -->
+        <div class="d-flex mb-4">
+            <button class="tab-button btn btn-outline-primary me-2 active" data-tab="bio">Background</button>
+            <button class="tab-button btn btn-outline-primary me-2" data-tab="hobbies">Hobbies</button>
+            <button class="tab-button btn btn-outline-primary" data-tab="modules">Modules</button>
+        </div>
 
-            <!-- HOBBIES COLUMN (Middle) -->
-            <div class="col-md-3 hobby-col px-4">
-                <h3>Hobbies</h3>
-                <img src="/HTML/Images/Michee.jpg" class="hobby-img img-thumbnail" alt="Football">
-                <p>Michee captains his local football team and competes in weekend leagues. He also streams coding tutorials on Twitch.</p>
-                <p>His FIFA tournament record is 32-5 this season.</p>
+        <!-- BIO TAB CONTENT -->
+        <div id="bio" class="tab-content active">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Biography and Background</h3>
+                    <img src="/HTML/Images/Michee.jpg" class="profile-img img-thumbnail" alt="Michee">
+                    <p>Michee was born in Pretoria and studies BIT Information Systems. He chose this degree to develop technical solutions for African business challenges.</p>
+                    <p>His research focuses on mobile payment systems and their impact on informal economies.</p>
+                </div>
             </div>
+        </div>
 
-            <!-- MODULES COLUMN (Right) -->
-            <div class="col-md-4 ps-4">
-                <h3>Modules</h3>
-                <div class="row">
-                    <div class="col">
-                        <h5>Semester 1</h5>
-                        <ul class="module-list">
-                            <li>• INF 271</li>
-                            <li>• WTW 114</li>
-                            <li>• COS 132</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Semester 2</h5>
-                        <ul class="module-list">
-                            <li>• INF 272</li>
-                            <li>• WTW 124</li>
-                            <li>• COS 212</li>
-                        </ul>
+        <!-- HOBBIES TAB CONTENT -->
+        <div id="hobbies" class="tab-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Hobbies</h3>
+                    <img src="/HTML/Images/Michee.jpg" class="hobby-img img-thumbnail" alt="Football">
+                    <p>Michee captains his local football team and competes in weekend leagues. He also streams coding tutorials on Twitch.</p>
+                    <p>His FIFA tournament record is 32-5 this season.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODULES TAB CONTENT -->
+        <div id="modules" class="tab-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Modules</h3>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Semester 1</h5>
+                            <ul class="module-list">
+                                <li>• INF 271</li>
+                                <li>• WTW 114</li>
+                                <li>• COS 132</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Semester 2</h5>
+                            <ul class="module-list">
+                                <li>• INF 272</li>
+                                <li>• WTW 124</li>
+                                <li>• COS 212</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,5 +125,6 @@
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Content/Tabs.js"></script>
 </body>
 </html>

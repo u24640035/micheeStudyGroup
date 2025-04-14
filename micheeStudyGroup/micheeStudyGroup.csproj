@@ -147,8 +147,11 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\ListScript.js" />
     <Content Include="Content\ListStyle.css" />
+    <Content Include="Content\localStorage.js" />
     <Content Include="Content\MicheeCss.css" />
     <Content Include="Content\NewStyle.css" />
+    <Content Include="Content\studentSearch.js" />
+    <Content Include="Content\Tabs.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -196,6 +199,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Student\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
